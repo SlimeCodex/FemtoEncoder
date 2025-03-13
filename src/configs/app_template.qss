@@ -1,0 +1,557 @@
+/* ---- Application-wide styles ---- */
+/* ---- This file is used to define the global styles for the application ---- */
+
+/* ---- QMainWindow ---- */
+QMainWindow {
+}
+
+/* ---- QToolTip ---- */
+QToolTip {
+    background-color: {{tooltips_bg}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    font-family: "Inconsolata";
+    border: 2px solid {{tooltips_border}};
+    border-radius: 4px;
+    padding: 5px;
+    height: {{tooltips_height}};
+}
+
+/* ---- QWidget ---- */
+QWidget#basic {
+    /* ---- This style will be applied to all widgets ---- */
+}
+QWidget#title_bar {
+    background-color: {{app_win_bar_bg}};
+}
+QWidget#win_default_background {
+    background-color: {{app_win_bar_bg}};
+    border-radius: 0px;
+}
+QWidget#win_default_container {
+    background-color: {{app_bg}};
+    border-radius: 8px;
+}
+QWidget#interface_container {
+    background-color: transparent;
+}
+QWidget#plot_menu {
+    background-color: {{app_bg}};
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+QWidget#group_container {
+    background-color: {{app_widgets_container_bg}};
+    border: none;
+    border-radius: 8px;
+}
+
+/* ---- QStackedWidget ---- */
+QStackedWidget#widgets_area {
+    background-color: {{app_widgets_container_bg}};
+    border: none;
+    border-radius: 8px
+}
+
+/* ---- QListWidget ---- */
+QListWidget#basic {
+    background-color: {{app_bg}};
+    color: {{app_text}};
+    font-size: {{font_size_list}};
+    border: none;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 8px;
+}
+
+/* ---- QLabel ---- */
+QLabel#basic,
+QLabel#title {
+    background-color: {{app_bg}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+}
+QLabel#group_label {
+    background-color: {{app_widgets_container_bg}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+}
+QLabel#interface_descriptor {
+    background-color: {{interface_button_descriptor_bg}};
+    color: {{app_text}};
+    font-size: {{font_size_descriptor}};
+    min-height: {{button_height_descriptor}};
+    max-height: {{button_height_descriptor}};
+    border: none;
+    border-radius: 15px;
+}
+QLabel#interface_animation {
+    background-color: {{button_idle}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    border: none;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 2px;
+}
+QLabel#tab_label {
+    background: none;
+    color: {{app_text}};
+    font-size: {{font_size}};
+    border: none;
+    border-radius: 6px;
+    padding: 4px 6px;
+    min-width: 14px;
+}
+QLabel#tab_notification {
+    background: {{notification_bg}};
+    color: {{notification_text}};
+    font-size: {{font_size}};
+    border: none;
+    border-radius: 10px;
+    padding: 4px 6px;
+    min-width: 14px;
+}
+QLabel#connection_uplink_speed {
+    background-color: {{toolbar_button_idle}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-right: 2px;
+    margin-left: 5px;
+}
+QLabel#connection_downlink_speed {
+    background-color: {{toolbar_button_idle}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    border: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 5px;
+    margin-left: 2px;
+}
+QLabel#connection_status_offline {
+    background-color: {{link_status_offline_bg}};
+    color: {{link_status_text}};
+    font-size: {{font_size}};
+    border: none;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+QLabel#connection_status_linking {
+    background-color: {{link_status_linking_bg}};
+    color: {{link_status_text}};
+    font-size: {{font_size}};
+    border: none;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+QLabel#connection_status_online {
+    background-color: {{link_status_online_bg}};
+    color: {{link_status_text}};
+    font-size: {{font_size}};
+    border: none;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+QLabel#device_dock_title {
+    background-color: {{link_status_linking_bg}};
+    color: {{link_status_text}};
+    font-size: {{font_size}};
+    border: none;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* ---- QPushButton ---- */
+QPushButton#basic {
+    background-color: {{button_idle}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    height: {{button_height}};
+    border: none;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 0px;
+}
+QPushButton#tab_button {
+    background-color: {{button_idle}};
+    color: {{app_text}};
+    text-align: center;
+    font-size: {{font_size}};
+    height: {{button_height}};
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin: 4px;
+    padding: 0px 12px;
+}
+QPushButton#basic_pause {
+    background-color: {{button_paused}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    height: {{button_height}};
+    border: none;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 0px;
+}
+QPushButton#interface_select_left {
+    background-color: {{interface_button_idle}};
+    font-size: {{font_size}};
+    /* height adjusted automatically */
+    border: 2px solid {{button_border}};
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+QPushButton#interface_select_mid {
+    background-color: {{interface_button_idle}};
+    font-size: {{font_size}};
+    /* height adjusted automatically */
+    border: 2px solid {{button_border}};
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+QPushButton#interface_select_right {
+    background-color: {{interface_button_idle}};
+    font-size: {{font_size}};
+    /* height adjusted automatically */
+    border: 2px solid {{button_border}};
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+QPushButton#basic:hover,
+QPushButton#tab_button:hover,
+QPushButton#interface_select_left:hover,
+QPushButton#interface_select_mid:hover,
+QPushButton#interface_select_right:hover,
+QPushButton#interface_bottom:hover {
+    background-color: {{button_hover}};
+    border: 2px solid {{button_border_hover}};
+}
+QPushButton#basic:pressed,
+QPushButton#tab_button:pressed,
+QPushButton#interface_select_left:pressed,
+QPushButton#interface_select_mid:pressed,
+QPushButton#interface_select_right:pressed,
+QPushButton#interface_bottom:pressed {
+    background-color: {{button_pressed}};
+}
+QPushButton#enabled {
+    background-color: {{loading_bar_chunk}};
+    color: {{link_status_text}};
+    font-size: {{font_size}};
+    height: {{button_height}};
+    border: none;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 8px;
+}
+QPushButton#quick_command_button {
+    background-color: {{quick_command_button_idle}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    height: {{button_height}};
+    border: none;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 8px;
+}
+
+/* ---- ToggleButton ---- */
+ToggleButton#basic {
+    background-color: {{button_idle}};
+    border: none;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 8px;
+}
+ToggleButton#enabled {
+    background-color: {{loading_bar_chunk}};
+    border: none;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 8px;
+}
+ToggleButton#title {
+    background-color: {{toolbar_button_idle}};
+    border-radius: 4px;
+    margin: 3px;
+}
+/* ---- Embedded QPushButton ---- */
+QPushButton#title:hover {
+    background-color: {{button_hover}};
+    border-radius: 4px;
+}
+QPushButton#title:pressed {
+    background-color: {{button_pressed}};
+}
+
+/* ---- SingleButton ---- */
+SingleButton#basic {
+    background-color: {{button_idle}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    border: none;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 8px;
+}
+SingleButton#title {
+    background-color: {{toolbar_button_idle}};
+    border-radius: 4px;
+    margin: 3px;
+}
+SingleButton#interface_error {
+    background-color: none;
+    color: {{app_text}};
+    font-size: {{font_size}};
+    border: none;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 8px;
+}
+
+/* ---- QLineEdit ---- */
+QLineEdit#basic {
+    background-color: {{text_box_single_input}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    height: {{line_edit_height}};
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+}
+QLineEdit#debug_bar {
+    background-color: {{text_box_single_output_debug_bg}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    height: {{line_edit_height}};
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+}
+QLineEdit#text_box_single_output_bg {
+    background-color: {{text_box_single_output_bg}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    height: {{line_edit_height}};
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+}
+QLineEdit#drag_placeholder {
+    background: transparent;
+    color: {{app_text}};
+    font-size: {{font_size}};
+    /* height adjusted automatically */
+    border: none;
+    border-radius: 4px;
+}
+QLineEdit#drag_highlight {
+    background: {{text_box_output_drag_drop_highlight}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    /* height adjusted automatically */
+    border: none;
+    border-radius: 4px;
+}
+QLineEdit#stats {
+    background-color: {{text_box_single_output_bg}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    height: {{line_edit_stats_height}};
+    height: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+QPlainTextEdit#printf  {
+    background-color: {{text_box_single_output_bg}};
+    color: {{app_text}};
+    font-size: {{font_size_consoles}};
+    /* height adjusted automatically */
+    line-height: 120%;
+    border: 2px solid {{text_box_output_border}};
+    border-radius: 8px;
+    margin: 0px;
+    padding: 8px;
+}
+
+/* ---- QTextEdit ---- */
+QTextEdit#basic  {
+    background-color: {{app_win_bar_bg}};
+    color: {{app_text}};
+    font-size: {{font_size_consoles}};
+    /* height adjusted automatically */
+    line-height: 120%;
+    border: 2px solid {{text_box_output_border}};
+    border-radius: 8px;
+    margin: 0px;
+    padding: 8px;
+}
+
+/* ---- QSpliter ---- */
+QSplitter#basic::handle {
+    background-color: {{splitter_handle}};
+    border: none;
+}
+
+/* ---- QScrollBar ---- */
+QScrollBar#basic:vertical {
+    border: none;
+    background-color: {{app_widgets_container_bg}};
+    width: 16px;
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+QScrollBar#basic::handle:vertical {
+    background-color: {{scroll_handle}};
+    min-height: 20px;
+    border-radius: 4px;
+}
+QScrollBar#basic::handle:vertical:hover {
+    background-color: {{button_hover}};
+}
+QScrollBar#basic::sub-line:vertical, QScrollBar#basic::add-line:vertical {
+    background: none;
+    border: none;
+    height: 0px;
+}
+QScrollBar#basic::add-page:vertical, QScrollBar#basic::sub-page:vertical {
+    background: none;
+}
+QScrollBar#basic:horizontal {
+    border: none;
+    background-color: {{app_widgets_container_bg}};
+    height: 16px;
+    border-radius: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+QScrollBar#basic::handle:horizontal {
+    background-color: {{scroll_handle}};
+    min-width: 20px;
+    border-radius: 4px;
+}
+QScrollBar#basic::handle:horizontal:hover {
+    background-color: {{button_hover}};
+}
+QScrollBar#basic::sub-line:horizontal, QScrollBar#basic::add-line:horizontal {
+    background: none;
+    border: none;
+    height: 0px;
+}
+QScrollBar#basic::add-page:horizontal, QScrollBar#basic::sub-page:horizontal {
+    background: none;
+}
+
+/* ---- QScrollArea ---- */
+QScrollArea#plot_area {
+    background-color: {{app_bg}};
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+QScrollArea#tab_area {
+    background-color: {{app_widgets_container_bg}};
+    border: none;
+    border-radius: 8px;
+    padding-right: 8px;
+}
+
+/* ---- QFrame ---- */
+QFrame#basic {
+    /* ---- This style will be applied to all frames ---- */
+}
+QFrame#subplot_frame {
+    background-color: {{app_bg}};
+    border: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+QFrame#lidar_frame {
+    background-color: {{app_bg}};
+    border: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+QFrame#map_frame {
+    background-color: {{app_bg}};
+    border: none;
+    border-radius: 8px;
+}
+QFrame#camera_frame {
+    background-color: {{app_bg}};
+    border: none;
+    border-radius: 8px;
+}
+
+/* ---- QProgressBar ---- */
+QProgressBar#basic {
+    background-color: {{loading_bar_bg}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    height: {{loading_bar_bg_height}};
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+QProgressBar#basic::chunk {
+    background-color: {{loading_bar_chunk}};
+    border-radius: 4px;
+}
+QProgressBar#loading_bar_chunk_error {
+    background-color: {{loading_bar_bg}};
+    color: {{app_text}};
+    font-size: {{font_size}};
+    height: {{loading_bar_bg_height}};
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+QProgressBar#loading_bar_chunk_error::chunk {
+    background-color: {{loading_bar_chunk_error}};
+}
+
+/* ---- QGroupBox ---- */
+QGroupBox#basic {
+    font-size: {{font_size}};
+    border: 2px solid {{qgroup_border}};
+    border-radius: 8px;
+    margin-top: 8px;
+}
+QGroupBox#basic::title {
+    color: {{app_text}};
+    padding: 0 8px;
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+}

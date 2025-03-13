@@ -1,0 +1,63 @@
+Property,neve,book,ice,cloud,sand,neve_deut,book_prot,ice_trit
+
+app_win_bar_bg, #e0e0e0, #ddd5c9, #b3d9ff, #f0f8ff, #f5f5dc, #e0e0e0, #ddd5c9, #b3d9ff
+toolbar_button_idle, #d0d0d0, #c3b9ac, #a8d3f0, #e0ffff, #eee8aa, #d0d0d0, #c3b9ac, #a8d3f0
+win_bar_min_button_normal_icon, #000000, #463f3a, #333333, #696969, #8b4513, #000000, #7f6e62, #666666
+win_bar_min_button_hover_icon, #000000, #5c4f47, #4d4d4d, #778899, #a0522d, #000000, #917c6f, #7f7f7f
+win_bar_min_button_pressed_icon, #000000, #726057, #666666, #a9a9a9, #cd853f, #000000, #a38873, #999999
+win_bar_max_button_normal_icon, #000000, #463f3a, #333333, #696969, #8b4513, #000000, #7f6e62, #666666
+win_bar_max_button_hover_icon, #000000, #5c4f47, #4d4d4d, #778899, #a0522d, #000000, #917c6f, #7f7f7f
+win_bar_max_button_pressed_icon, #000000, #726057, #666666, #a9a9a9, #cd853f, #000000, #a38873, #999999
+win_bar_close_button_normal_icon, #000000, #a1392f, #8b0000, #dc143c, #b22222, #590000, #912f28, #990000
+
+tooltips_bg, #e0e0e0, #ddd5c9, #b3d9ff, #f0f8ff, #f5f5dc, #e0e0e0, #ddd5c9, #b3d9ff
+tooltips_border, #c0c0c0, #c3b9ac, #a8d3f0, #e0ffff, #eee8aa, #c0c0c0, #c3b9ac, #a8d3f0
+
+app_bg, #f0f0f0, #f8efe9, #dcefff, #f8f8ff, #fff8dc, #f0f0f0, #f8efe9, #dcefff
+app_text, #303030, #463f3a, #333333, #2f4f4f, #800000, #595959, #65594f, #666666
+app_widgets_container_bg, #d6d6d6, #e8e0d8, #cfe8ff, #f0ffff, #fffacd, #d6d6d6, #e8e0d8, #cfe8ff
+
+interface_button_idle, #bfbfbf, #c3b9ac, #a8d3f0, #add8e6, #ffd700, #bfbfbf, #c3b9ac, #a8d3f0
+interface_button_descriptor_bg, #d6d6d6, #e8e0d8, #cfe8ff, #f0ffff, #fffacd, #d6d6d6, #e8e0d8, #cfe8ff
+
+button_svg_icon, #303030, #463f3a, #333333, #2f4f4f, #800000, #595959, #65594f, #666666
+button_svg_icon_warning, #cc5500, #b58900, #808000, #ff8c00, #ff4500, #b27200, #b58900, #999900
+
+button_idle, #e0e0e0, #ddd5c9, #b3d9ff, #add8e6, #ffd700, #e0e0e0, #ddd5c9, #b3d9ff
+button_hover, #d4d4d4, #c3b9ac, #9acbef, #87ceeb, #ffa500, #d4d4d4, #c3b9ac, #9acbef
+button_pressed, #909090, #a69f91, #88bde0, #4682b4, #ff8c00, #909090, #a69f91, #88bde0
+button_border, #e0e0e0, #ddd5c9, #b3d9ff, #add8e6, #ffd700, #e0e0e0, #ddd5c9, #b3d9ff
+button_border_hover, #303030, #463f3a, #333333, #2f4f4f, #800000, #595959, #65594f, #666666
+button_paused, #be7878, #e6b8af, #c2d4e8, #d8bfd8, #bc8f8f, #be7878, #e6b8af, #c2d4e8
+
+quick_command_button_idle, #c0c0c0, #ddd5c9, #b3d9ff, #add8e6, #ffd700, #c0c0c0, #ddd5c9, #b3d9ff
+text_box_single_input, #c0c0c0, #ddd5c9, #b3d9ff, #add8e6, #ffd700, #c0c0c0, #ddd5c9, #b3d9ff
+
+text_box_single_output_debug_bg, #d6d6d6, #e8e0d8, #cfe8ff, #f0ffff, #fffacd, #d6d6d6, #e8e0d8, #cfe8ff
+text_box_single_output_bg, #f0f0f0, #f8efe9, #dcefff, #f8f8ff, #fff8dc, #f0f0f0, #f8efe9, #dcefff
+
+text_box_output_border, #f0f0f0, #f8efe9, #dcefff, #f8f8ff, #fff8dc, #f0f0f0, #f8efe9, #dcefff
+text_box_output_paused_border, #be7878, #e6b8af, #c2d4e8, #d8bfd8, #bc8f8f, #be7878, #e6b8af, #c2d4e8
+text_box_output_drag_drop_highlight, #969696, #a69f91, #88bde0, #4682b4, #ff8c00, #969696, #a69f91, #88bde0
+
+loading_bar_bg, #c0c0c0, #c3b9ac, #a8d3f0, #add8e6, #ffd700, #c0c0c0, #c3b9ac, #a8d3f0
+loading_bar_chunk, #006400, #006400, #006400, #008080, #228b22, #196f19, #006400, #339933
+loading_bar_chunk_error, #8b0000, #8b0000, #8b0000, #b22222, #dc143c, #7f0000, #8b0000, #990000
+
+link_status_text, #f0f0f0, #f0f0f0, #f0f0f0, #ffffff, #ffffff, #f0f0f0, #f0f0f0, #f0f0f0
+link_status_offline_bg, #8b0000, #a1392f, #8b0000, #b22222, #dc143c, #7f0000, #912f28, #990000
+link_status_online_bg, #008b00, #4f7942, #008b00, #228b22, #00ff00, #196f19, #4f7942, #339933
+link_status_linking_bg, #8b8b00, #b58900, #8b8b00, #ffd700, #ffff00, #7f7f00, #b58900, #999900
+
+notification_text, #f0f0f0, #f0f0f0, #f0f0f0, #ffffff, #ffffff, #f0f0f0, #f0f0f0, #f0f0f0
+notification_bg, #440000, #782218, #660000, #a52a2a, #8b0000, #3c0000, #6e1f18, #590000
+
+scroll_handle, #c0c0c0, #c3b9ac, #a8d3f0, #add8e6, #ffd700, #c0c0c0, #c3b9ac, #a8d3f0
+
+splitter_handle, #c0c0c0, #c3b9ac, #a8d3f0, #add8e6, #ffd700, #c0c0c0, #c3b9ac, #a8d3f0
+
+graph_text, #303030, #463f3a, #333333, #2f4f4f, #800000, #595959, #65594f, #666666
+graph_bg, #f0f0f0, #f8efe9, #dcefff, #f8f8ff, #fff8dc, #f0f0f0, #f8efe9, #dcefff
+graph_axis, #303030, #463f3a, #333333, #2f4f4f, #800000, #595959, #65594f, #666666
+
+qgroup_border, #303030, #463f3a, #333333, #2f4f4f, #800000, #595959, #65594f, #666666
