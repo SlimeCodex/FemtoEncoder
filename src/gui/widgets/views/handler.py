@@ -409,9 +409,9 @@ class FirmwareEncoder(QWidget):
         with open(file_path, 'rb') as enc_file:
             encrypted_data = enc_file.read()
 
-        cipher = AES.new(key, AES.MODE_CBC, iv)
+        cipher = AES.new(key, AES.MODE_CFB, iv)
         try:
-            decrypted_data = unpad(cipher.decrypt(encrypted_data), AES.block_size)
+            decrypted_data = cipher.decrypt(encrypted_data)
         except ValueError:
             self.logger.info("Decryption failed. Possibly wrong key, IV or corrupted file.")
             return
