@@ -12,6 +12,7 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtCore import Qt
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
+from src.gui.widgets.utils import CollapsibleBox
 
 class FirmwareEncoder(QWidget):
     def __init__(self, parent=None):
@@ -269,12 +270,33 @@ class FirmwareEncoder(QWidget):
         main_layout = QVBoxLayout(self)
         main_layout.setContentsMargins(0, 0, 0, 0)
         main_layout.setSpacing(8)
-        main_layout.addWidget(self.directory_group)
-        main_layout.addWidget(self.deploy_group)
-        main_layout.addWidget(self.keys_group)
-        main_layout.addWidget(self.encryptor_group)
-        main_layout.addWidget(self.decryptor_group)
-        main_layout.addWidget(self.meta_group)
+
+        # Wrap your existing widgets with CollapsibleBox
+        self.dir_box = CollapsibleBox("Default Deployment Directory")
+        self.dir_box.setContentLayout(self.directory_group.layout())
+
+        self.deploy_box = CollapsibleBox("Deploy Repository")
+        self.deploy_box.setContentLayout(self.deploy_group.layout())
+
+        self.keys_box = CollapsibleBox("Encryption Keys")
+        self.keys_box.setContentLayout(self.keys_group.layout())
+
+        self.encryptor_box = CollapsibleBox("Firmware Encryptor")
+        self.encryptor_box.setContentLayout(self.encryptor_group.layout())
+
+        self.decryptor_box = CollapsibleBox("Firmware Decryptor")
+        self.decryptor_box.setContentLayout(self.decryptor_group.layout())
+
+        self.meta_box = CollapsibleBox("Firmware Meta")
+        self.meta_box.setContentLayout(self.meta_group.layout())
+
+        # Add boxes to main layout
+        main_layout.addWidget(self.dir_box)
+        main_layout.addWidget(self.deploy_box)
+        main_layout.addWidget(self.keys_box)
+        main_layout.addWidget(self.encryptor_box)
+        main_layout.addWidget(self.decryptor_box)
+        main_layout.addWidget(self.meta_box)
 
     def browse_default_directory(self):
         dir_path = QFileDialog.getExistingDirectory(self, "Select Default Deployment Directory")
